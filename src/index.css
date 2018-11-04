@@ -36,3 +36,7 @@ code {
   background: none;
   border: none;
 }
+
+.btn-block {
+  padding: 0.575rem .75rem;
+}
