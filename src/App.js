@@ -55,7 +55,7 @@ class App extends Component {
     return (
       <div className="container">
         <Header />
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Switch>
               <Route exact path='/' render={(props) => <TodoList {...props} todos={todos} />} /> 
               <Route path='/newTodo' render={(props) => <NewTodo {...props} checkValidation={this.checkValidation} errors={this.state.errors}/> } />

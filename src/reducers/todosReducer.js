@@ -1,6 +1,6 @@
 const initState = {
     todos: [
-        { id: 1, title: 'Make a todo app', content: 'Do it!'},
+        { id: 1, title: 'Test todo', content: 'Just a test todo'},
       ]
     }
 
@@ -14,7 +14,6 @@ const todosReducer = (state = initState, action) => {
         return todos
         
         case 'ADD_TODO':
-        console.log(state);
         return [
             ...state, action.todo
         ]
